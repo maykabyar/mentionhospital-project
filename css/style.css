@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*Start Header Intro Section*/
+.headerintros{
+	height: 50px;
+	background-color: darkblue;
+	color: #fff;
+	display: none;
+}
+
+.headerintros .infos{
+	display: flex;
+	
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+@media(min-width: 1200px){
+	.visiblelgs{    /* .headerintros loh pl pay ll ya dl*/
+		display: block;
+	}
+}
+
+/*End Header Intro Section*/
+
+/*Start Banner Section*/
+
+.carousel-item{
+	height: 60vh;
+}
+
+.banners1,.banners2,.banners3{
+	background-image: url(../assets/img/banner/banner4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banners2{
+	background-image: url(../assets/img/banner/banner5.jpg);
+}
+
+.banners3{
+	background-image: url(../assets/img/banner/banner6.jpg);
+}
+
+.btn-blues{
+	background-color: darkblue;
+	color: #fff;
+}
+
+/*End Banner Section*/
+
+/*Start Features Section*/
+
+.iconboxes{
+	background-color: #fff;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+	padding: 50px 20px;
+
+	position: relative;
+}
+
+.icons{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: darkcyan;
+	color: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	left: calc(50% - 35px);
+	top: -35px;
+}
+
+.iconboxes:hover .icons{
+	background: none;
+	color: darkcyan;
+	border: 2px solid darkcyan;
+}
+
+/*Start Features Section*/
+
+/*Start Info Section*/
+
+.fromlefts{
+	animation-name: myleft;
+	animation-duration: 3s;
+}
+
+.fromrights{
+	animation-name: myright;
+	animation-duration: 3s;
+}
+
+@keyframes myleft{
+	from{
+		transform: translateX(-30px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes myright{
+	from{
+		transform: translateX(30px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+
+/*End Info Section*/
+
+/* Start Adv Section */
+
+.advs{
+	height: 300px;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../assets/img/banner/banner1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	color: #fff;
+	text-shadow: -5px 0 10px #000;
+
+	display: flex;
+	align-items: center;
+}
+
+/* End Adv Section */
